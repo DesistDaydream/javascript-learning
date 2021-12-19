@@ -21,6 +21,14 @@ var undefinedType
 console.log(nullType)
 console.log(undefinedType)
 
+// 函数类型
+function functiomType() {}
+
 // 数据类型检测
-var detectDateType = 100
-console.log("检测到的数据类型：", typeof detectDateType)
+console.log("检测数值变量的数据类型：", typeof numberType)
+console.log("检测字符串变量的数据类型：", typeof stringType)
+console.log("检测布尔变量的数据类型：", typeof booleanType)
+// 这个 null 的数据类型是 object
+console.log("检测布尔变量的数据类型：", typeof nullType)
+console.log("检测布尔变量的数据类型：", typeof undefinedType)
+console.log("检测函数的数据类型：", typeof functiomType)
