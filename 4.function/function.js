@@ -21,3 +21,14 @@ function returnFn() {
 }
 
 console.log(returnFn())
+
+
+// function test(columns) {
+//     document.write("* ")    
+//     document.write("</br>")
+//     if (columns == 1) return 1;
+//     return test()
+
+// }
+
+// test(9)
