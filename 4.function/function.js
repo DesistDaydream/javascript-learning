@@ -22,13 +22,14 @@ function returnFn() {
 
 console.log(returnFn())
 
+// 使用递归函数实现输出一个正方形,就是 for.js 样例中的正方形。
+function shapeFn(rows, columns) {
+    for (var c = 0; c < columns; c++) {
+        document.write("* ")
+    }
+    document.write("</br>")
+    if (rows == 1) return 1;
+    return shapeFn(rows - 1, columns)
+}
 
-// function test(columns) {
-//     document.write("* ")    
-//     document.write("</br>")
-//     if (columns == 1) return 1;
-//     return test()
-
-// }
-
-// test(9)
+shapeFn(3, 3)
