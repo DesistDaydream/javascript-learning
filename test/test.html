@@ -7,29 +7,7 @@
 </head>
 
 <body>
-    <script>
-        var https = require('https')
-        var options = {
-            hostname: 'www.baidu.com',
-            port: 443,
-            path: '/',
-            method: 'GET'
-        }
-
-        var req = https.request(options, res => {
-            console.log(`状态码: ${res.statusCode}`)
-
-            res.on('data', d => {
-                process.stdout.write(d)
-            })
-        })
-
-        req.on('error', error => {
-            console.error(error)
-        })
-
-        req.end()
-    </script>
+    <script src="./test.js"></script>
 </body>
 
 </html>
