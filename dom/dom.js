@@ -9,5 +9,12 @@ console.log(elementById)
 var elementsByClassName = document.getElementsByClassName("box")
 console.log(elementsByClassName)
 
-// 根据标签名获取元素
-var elementsByTagName = document.getElementsByTagName()
+// 根据标签获取元素
+// 返回值是一个 HTMLCollection 类型的对象
+var elementsByTagName = document.getElementsByTagName("div")
+console.log(elementsByTagName)
+
+// 根据选择器获取元素
+// 只返回选择器匹配到的第一个元素
+var elementsQuerySelector = document.querySelector("div")
+console.log(elementsQuerySelector)
