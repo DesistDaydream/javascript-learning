@@ -63,6 +63,7 @@ console.log(selectSort)
 
 // Javascript 提供了很多方法，可以操作数组
 // 比如 forEach() 可以遍历数组
+// function (item, index) 中的 index 可以省略
 arrayType.forEach(function (item, index) {
     console.log("索引:", index, "元素:", item)
 });

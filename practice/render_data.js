@@ -27,9 +27,11 @@ users.forEach(function (item) {
         var td = document.createElement("td")
         td.innerHTML = item[key]
 
-        // 把 td 插入到 tr 内部
+        // 把 td 插入到 tr
         tr.appendChild(td)
     }
 
     tbody.appendChild(tr)
+
+    // 注意，这个练习其实不太好，当我们将 user 中其中一个元素的 id、name、age 中任意两个上下颠倒一下，则对应的数据就乱了，最好的是将 Object 中的 key 与 HTML 中表格的表头关联起来
 })
