@@ -1,4 +1,5 @@
 // ########元素的增删改查########
+// 注意：在 JS 中，Node(节点) 与 Element(元素) 的概念非常相近，很多时候都是不加区别的使用
 // 创建元素
 createdElement = document.createElement("div")
 createdElement.innerText = "JS 创建的元素"
@@ -8,6 +9,7 @@ console.log(createdElement)
 var parentElement = document.getElementById("parent_element")
 var childElementP1 = document.getElementById("child_element_p1")
 var childElementP2 = document.getElementById("child_element_p2")
+var childElementP3 = document.getElementById("child_element_p3")
 
 // 插入元素
 // 附加到末尾，将 createdElement 元素插入 parentElement 内
@@ -37,3 +39,20 @@ replace_child_button.onclick = function () {
 }
 
 // 克隆元素
+clone_button.onclick = function () {
+    newElement = childElementP3.cloneNode(true)
+    // 将克隆元素插入到 parentElement 这个元素内，并放在最后
+    parentElement.appendChild(newElement)
+}
+
+// ########获取元素尺寸########
+// offsetWidth 与 offsetHeight 获取到的元素尺寸是 border+padding+content 的和
+console.log("父元素宽度:", parentElement.offsetWidth)
+console.log("父元素高度:", parentElement.offsetHeight)
+console.log("子元素1宽度:", childElementP1.offsetWidth)
+console.log("子元素1高度:", childElementP1.offsetHeight)
+// clientWidth 与 clientHeight 获取到的元素尺寸是 padding+content 的和
+console.log("父元素宽度:", parentElement.clientWidth)
+console.log("父元素高度:", parentElement.clientHeight)
+console.log("子元素1宽度:", childElementP1.clientWidth)
+console.log("子元素1高度:", childElementP1.clientHeight)
