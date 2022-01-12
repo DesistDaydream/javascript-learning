@@ -20,6 +20,7 @@ function getElement() {
     // 返回选择器匹配到的第一个元素
     var elementQuerySelector = document.querySelector("div")
     console.log("根据选择器获取匹配到的第一个元素:\n", elementQuerySelector)
+
     // 返回选择器匹配到的所有元素
     // 返回值是一个 NodeList 类型的对象
     var elementsQuerySelectorObject = document.querySelectorAll("div")
@@ -139,16 +140,16 @@ function main() {
     getElement()
 
     // 处理 HTML 元素的文本与超文本
-    handleElementText()
+    // handleElementText()
 
-    // 处理 HTML 元素的属性
-    handleElementAttribute()
+    // // 处理 HTML 元素的属性
+    // handleElementAttribute()
 
-    // 处理 HTML 元素的类名
-    handleElementClass()
+    // // 处理 HTML 元素的类名
+    // handleElementClass()
 
-    // 操作元素的样式
-    handleElementStyle()
+    // // 操作元素的样式
+    // handleElementStyle()
 }
 
 main()

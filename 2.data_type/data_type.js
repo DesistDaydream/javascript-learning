@@ -1,17 +1,15 @@
 // 数值类型
 var numberType = 2e5
-document.write(numberType)
-document.write("<br>")
+console.log(numberType)
+
 
 // 字符串类型
 var stringType = "string"
-document.write(stringType)
-document.write("<br>")
+console.log(stringType)
 
 // 布尔类型
 var booleanType = true
-document.write(booleanType)
-document.write("<br>")
+console.log(booleanType)
 
 // 空类型
 // null # 有值，但是该值表示为空值
@@ -23,6 +21,15 @@ console.log(undefinedType)
 
 // 函数类型
 function functiomType() {}
+console.log(functiomType)
+
+// 对象类型
+var objectType = {}
+console.log(objectType)
+
+// 数组类型
+var arrayType = []
+console.log(arrayType)
 
 // 数据类型检测
 console.log("检测数值变量的数据类型：", typeof numberType)
@@ -32,3 +39,5 @@ console.log("检测布尔变量的数据类型：", typeof booleanType)
 console.log("检测布尔变量的数据类型：", typeof nullType)
 console.log("检测布尔变量的数据类型：", typeof undefinedType)
 console.log("检测函数的数据类型：", typeof functiomType)
+console.log("检测对象变量的数据类型：", typeof objectType)
+console.log("检测数组变量的数据类型：", typeof arrayType)
