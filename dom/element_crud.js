@@ -1,5 +1,8 @@
 // ########元素的增删改查########
-// 注意：在 JS 中，Node(节点) 与 Element(元素) 的概念非常相近，很多时候都是不加区别的使用
+// 注意：在 JS 中，Node(节点) 与 Element(元素) 的概念非常相近
+// 在 HTML 中称为 Element
+// 当使用 DOM 接口获取到 Web 中的 Element 之后，称之为 Node
+
 // 创建元素
 createdElement = document.createElement("div")
 createdElement.innerText = "JS 创建的元素"
