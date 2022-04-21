@@ -1,3 +1,4 @@
+// 鼠标跟随事件
 // 获取 img 元素
 var imgNode = document.querySelector("img")
 
