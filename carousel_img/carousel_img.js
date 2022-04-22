@@ -56,8 +56,3 @@ banner.onclick = function (e) {
         console.log(e.target.dataset.i)
     }
 }
-
-// 自动轮播
-setInterval(function () {
-    changeOneImg("right")
-}, 5000)
