@@ -29,7 +29,8 @@ function event_propagation() {
     }
     li.onclick = function (property) {
         console.log("li被点击了")
-        property.stopPropagation()
+        // 若想要阻止传播，只需要执行 stopPropagation() 方法即可
+        // property.stopPropagation()
     }
     // 当内部元素 li 被点击时，事件会被传播到父元素 ul，并触发父元素的事件处理函数
 }
