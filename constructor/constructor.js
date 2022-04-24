@@ -35,3 +35,12 @@ console.log(person1.showInfo())
 // 使用 new() 实例化另一个对象
 var person2 = new Person('李四', 30)
 console.log(person2)
+
+
+// 原型链
+// 实例 person1 的 __proto__ 指向 Person.prototype，而 Person.prototype 的 __proto__ 指向 Object.prototype
+// Object.prototype 的 __proto__ 指向 null
+//
+// Person.__proto__ 指向 Function.prototype，而 Function.prototype 的 __proto__ 指向 Object.prototype
+console.log(person1.__proto__.__proto__.__proto__)
+console.log(Function.prototype.__proto__.__proto__)
