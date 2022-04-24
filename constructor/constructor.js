@@ -6,11 +6,12 @@
 // }
 
 // // Person 的方法，名为 showInfo
+// // 由于 JS 是通过构造函数与原型实现的面向对象编程，所以方法要定义在 prototype 上
 // Person.prototype.showInfo = function () {
 //     return this.name + " is " + this.age + " years old."
 // }
 
-// 使用 ES6 的新语法创建一个对象模板，而不是使用一个意义不够明确的构造函数。
+// 使用 ES6 的新语法创建一个对象模板，而不是使用一个容易产生歧义的构造函数。
 // 这种写法类似于一个语法糖，让 JS 中面向对象的代码写法与传统面向对象的写法类似
 class Person {
     // 定义一个方法，这个方法会在使用 new() 生成对象时自动调用，类似于 Python 中 class 的 __init__ 方法
