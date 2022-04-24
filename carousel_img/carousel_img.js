@@ -12,13 +12,17 @@ function changeOneImg(params) {
     points[index].classList.remove("active")
 
     switch (params) {
+        // 左箭头
         case "left":
             index--
             break;
+            // 右箭头
         case "right":
             index++
             break;
+            // params 是数字，则说明点击的是焦点内的按钮，直接切换到指定的图片
         default:
+            index = params
             break;
     }
 
@@ -53,6 +57,12 @@ banner.onclick = function (e) {
             break;
     }
     if (e.target.dataset.name == "point") {
-        console.log(e.target.dataset.i)
+        // 触发切换显示的图片
+        changeOneImg(e.target.dataset.i)
     }
 }
+
+// 自动轮播
+var timer = setInterval(function () {
+    changeOneImg("right")
+}, 5000)
