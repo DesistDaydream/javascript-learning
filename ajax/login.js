@@ -18,10 +18,17 @@ loginForm.onsubmit = function (e) {
 
     // 发送 ajax 请求
     let xhr = new XMLHttpRequest()
-    xhr.open("POST", "http://localhost:8080/login", true)
+    xhr.open("POST", "http://localhost:18080/login", true)
     xhr.onload = function () {
-
+        // 根据响应体中的信息，更新页面
+        let resp = JSON.parse(xhr.responseText)
+        if (resp.code === 1) {
+            // 跳转到首页
+            window.location.href = "./home.html"
+        } else {
+            errBox.style.display = 'block'
+        }
     }
-    xhr.send()
-    console.log(e)
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded")
+    xhr.send('username=' + name + '&password=' + pwd)
 }
