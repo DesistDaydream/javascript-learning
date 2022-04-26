@@ -1,4 +1,6 @@
-var http = require('https');
+import {
+    request
+} from 'https';
 
 // 用于请求的选项
 var options = {
@@ -24,5 +26,5 @@ var callback = function (response) {
 }
 
 // 向服务端发送请求
-var req = http.request(options, callback);
+var req = request(options, callback);
 req.end();
