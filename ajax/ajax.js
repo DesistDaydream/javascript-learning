@@ -11,5 +11,5 @@ xhr.onload = function () {
     console.log(xhr.status)
 }
 
-// 发送请求
+// 使用配置好的信息发起 HTTP 请求
 xhr.send()
