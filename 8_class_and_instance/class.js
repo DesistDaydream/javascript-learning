@@ -5,19 +5,27 @@ class Person {
     // 一个 class 中必须包含一个 constructor() 方法，用来定义该 class 的属性。若没有显式定义，则会自动创建一个
     constructor(name, age) {
         // 若没有 this 关键字，则这俩不会变为 Person 的属性，仅仅只是一个赋值操作，类似于 Python 中 class 的 self 关键字
-        this.name = name;
-        this.age = age;
+        this.name = name
+        this.age = age
     }
 
     // Person 的方法，名为 showInfo
     showInfo() {
-        return this.name + " is " + this.age + " years old.";
+        return this.name + " is " + this.age + " years old."
     }
+
+    // 静态属性??
+    // static a = 100
+    // 静态方法??
+    // static getInfo() {
+    //     console.log(this.a)
+    // }
 }
 
-// 使用 new() 实例化一个对象
-var person1 = new Person('张三', 20);
-console.log(person1.showInfo());
-// 使用 new() 实例化另一个对象
-var person2 = new Person('李四', 30);
-console.log(person2);
+// 使用 new 实例化一个对象
+var person1 = new Person('张三', 20)
+console.log(person1.showInfo())
+
+// 使用 new 实例化另一个对象
+var person2 = new Person('李四', 30)
+console.log(person2)
