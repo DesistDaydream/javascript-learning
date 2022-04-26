@@ -41,3 +41,14 @@ console.log("检测布尔变量的数据类型：", typeof undefinedType)
 console.log("检测函数的数据类型：", typeof functiomType)
 console.log("检测对象变量的数据类型：", typeof objectType)
 console.log("检测数组变量的数据类型：", typeof arrayType)
+
+let s1 = "Hello"
+let s2 = 'World'
+// 使用反引号可以在其中使用变量，且可以换行书写
+// 这个称为模板字符串
+let s3 = `Hello ${s1}
+ ${s2}`
+
+console.log(s1)
+console.log(s2)
+console.log(s3)

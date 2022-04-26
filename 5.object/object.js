@@ -36,7 +36,7 @@ function DeconstructObject() {
         age: 18
     }
 
-    // 解构赋值。大括号内的字符 name 相当于是想从 obj 中获取 name 的值，并赋值给 name
+    // 解构赋值。大括号内的字符 name 相当于是想从 obj 中获取 name 的值，并赋值给 nameAlias
     let {
         name: nameAlias,
         age
