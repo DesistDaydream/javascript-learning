@@ -70,4 +70,12 @@ function BasicArray() {
     })
 }
 
+// 解构赋值
+function DeconstructArray() {
+    let [a, b] = ["Hello", "World"]
+    console.log(a, b)
+}
+
 BasicArray()
+
+DeconstructArray()
