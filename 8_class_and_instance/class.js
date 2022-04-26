@@ -14,12 +14,12 @@ class Person {
         return this.name + " is " + this.age + " years old."
     }
 
-    // 静态属性??
-    // static a = 100
-    // 静态方法??
-    // static getInfo() {
-    //     console.log(this.a)
-    // }
+    // 静态属性??这个会报错 SyntaxError: Unexpected token =
+    // static a = 1
+    // 静态方法
+    static getInfo() {
+        console.log("This is a static method.")
+    }
 }
 
 // 使用 new 实例化一个对象
@@ -29,3 +29,6 @@ console.log(person1.showInfo())
 // 使用 new 实例化另一个对象
 var person2 = new Person('李四', 30)
 console.log(person2)
+
+// 调用静态方法
+Person.getInfo()
