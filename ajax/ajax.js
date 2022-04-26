@@ -2,7 +2,7 @@
 // 创建 ajax 对象
 let xhr = new XMLHttpRequest()
 // 配置请求信息
-xhr.open('GET', 'http://192.168.2.93:8080/', true)
+xhr.open('GET', 'http://localhost:8080/', true)
 
 // 绑定 onload 事件，以便在执行 xhr.send() 后处理响应
 xhr.onload = function () {
