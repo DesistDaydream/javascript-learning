@@ -45,6 +45,22 @@ function DeconstructObject() {
     console.log("解构赋值:\n", nameAlias, age)
 }
 
-// BasicObject()
+// 展开对象
+function Expand() {
+    let obj = {
+        name: "张三",
+        age: 18
+    }
 
-DeconstructObject()
+    // 展开对象。将 obj 中的属性值展开到当前对象中
+    let obj2 = {
+        gender: "男",
+        ...obj
+    }
+
+    console.log(obj2)
+}
+
+// BasicObject()
+// DeconstructObject()
+Expand()

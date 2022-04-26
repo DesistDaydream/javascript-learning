@@ -76,6 +76,23 @@ function DeconstructArray() {
     console.log(a, b)
 }
 
-BasicArray()
+// 展开运算符
+function Expand() {
+    let arr1 = [1, 2, 3]
+    console.log(arr1)
+    console.log(...arr1)
 
-DeconstructArray()
+    let arr2 = [4, 5, 6]
+    // 合并数组
+    let arr3 = [...arr1, ...arr2]
+    console.log(arr3)
+
+    // 给函数传参
+    let max = Math.max(...arr3)
+    console.log(max)
+}
+
+
+// BasicArray()
+// DeconstructArray()
+Expand()
