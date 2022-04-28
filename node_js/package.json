@@ -1,0 +1,12 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node hello_world.js"
+  },
+  "author": "",
+  "description": "",
+  "type": "module"
+}
