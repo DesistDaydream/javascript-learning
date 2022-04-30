@@ -11,6 +11,7 @@ function VarKeyword() {
     var varHoisting = "Variables Hoisting Test"
 }
 
+// ES6 中的 let 关键字
 function LetKeyword() {
     if (true) {
         // ES2015 引入了 let 与 const 关键字用于声明变量。加入了一些限制行为
