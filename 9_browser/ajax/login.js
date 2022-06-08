@@ -6,6 +6,8 @@ let errBox = document.querySelector(".error")
 
 // 绑定事件
 loginForm.onsubmit = function (e) {
+    // 阻止表单的默认提交行为(默认情况下当点击表单中的任何一个元素时，会自动触发表单的提交行为)
+    // 所以我们需要阻止默认行为，否则还没有执行后续代码了，就已经提交了，此时相当于当前页面刷新了一下
     e.preventDefault()
     // 获取表单信息
     let name = nameInp.value
