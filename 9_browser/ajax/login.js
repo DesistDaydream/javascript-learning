@@ -26,6 +26,7 @@ loginForm.onsubmit = function (e) {
         let resp = JSON.parse(xhr.responseText)
         if (resp.code === 1) {
             // 跳转到首页
+            // 注意：由于 js 文件是被嵌入到 html 中的，所以相对路径是相对于 html 文件的
             window.location.href = "./home.html"
         } else {
             errBox.style.display = 'block'
