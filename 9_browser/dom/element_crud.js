@@ -18,34 +18,34 @@ var childElementP3 = document.getElementById("child_element_p3")
 // 附加到末尾，将 createdElement 元素插入 parentElement 内
 // 并放在最后
 append_child_button.onclick = function () {
-    parentElement.appendChild(createdElement)
+  parentElement.appendChild(createdElement)
 }
 // 插入XX之前,将 createdElement 元素插入 parentElement 内
 // 并且放在 childElementP2 的前面
 insert_bufore_button.onclick = function () {
-    parentElement.insertBefore(createdElement, childElementP2)
+  parentElement.insertBefore(createdElement, childElementP2)
 }
 
 // 删除元素
 delete_button.onclick = function () {
-    // 两种语法
-    // 从 parentElement 中删除 childElementP1 元素
-    // parentElement.removeChild(childElementP1)
-    // 直接删除 childElementP1 元素
-    childElementP1.remove()
+  // 两种语法
+  // 从 parentElement 中删除 childElementP1 元素
+  // parentElement.removeChild(childElementP1)
+  // 直接删除 childElementP1 元素
+  childElementP1.remove()
 }
 
 // 替换元素
 replace_child_button.onclick = function () {
-    // 将 parentElement 元素中的 childElementP2 元素替换为 createdElement
-    parentElement.replaceChild(createdElement, childElementP2)
+  // 将 parentElement 元素中的 childElementP2 元素替换为 createdElement
+  parentElement.replaceChild(createdElement, childElementP2)
 }
 
 // 克隆元素
 clone_button.onclick = function () {
-    newElement = childElementP3.cloneNode(true)
-    // 将克隆元素插入到 parentElement 这个元素内，并放在最后
-    parentElement.appendChild(newElement)
+  newElement = childElementP3.cloneNode(true)
+  // 将克隆元素插入到 parentElement 这个元素内，并放在最后
+  parentElement.appendChild(newElement)
 }
 
 // ########获取元素尺寸########

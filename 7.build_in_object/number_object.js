@@ -2,7 +2,6 @@ var numberObject = new Number(3.1415926)
 
 console.log("数字类型对象:", numberObject)
 
-
 // 获取 0-1 中间的随机浮点数，小数点后至多保留 17 位
 console.log("随机数:", Math.random())
 

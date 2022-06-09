@@ -3,13 +3,12 @@ var numberObjectType = new Number(2e5)
 console.log(numberObjectType)
 
 stringType = "这是一个字符串"
-var stringObjectType = new String("这是一个字符串对象");
+var stringObjectType = new String("这是一个字符串对象")
 console.log(stringObjectType)
 
 booleanType = true
 var booleanObjectType = new Boolean(true)
 console.log(booleanObjectType)
-
 
 // 数据类型检测
 console.log("基本数值的数据类型: ", typeof numberType)

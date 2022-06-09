@@ -9,14 +9,10 @@
 // 否则浏览器将会报错：
 // Uncaught TypeError: Failed to resolve module specifier "module_one". Relative references must start with either "/", "./", or "../".
 // 因为浏览器无法根据模块的名称找到模块文件的路径，所以无法导入模块。
-import {
-    name as name_one
-} from './node_modules/module_one/one.js'
+import { name as name_one } from "./node_modules/module_one/one.js"
 
 // 通过模块文件导入模块
-import {
-    name
-} from "./node_modules/module_two/two.js"
+import { name } from "./node_modules/module_two/two.js"
 
 console.log(name_one)
 console.log(name)

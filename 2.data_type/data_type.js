@@ -2,7 +2,6 @@
 var numberType = 2e5
 console.log(numberType)
 
-
 // 字符串类型
 var stringType = "string"
 console.log(stringType)
@@ -43,7 +42,7 @@ console.log("检测对象变量的数据类型：", typeof objectType)
 console.log("检测数组变量的数据类型：", typeof arrayType)
 
 let s1 = "Hello"
-let s2 = 'World'
+let s2 = "World"
 // 使用反引号可以在其中使用变量，且可以换行书写
 // 这个称为模板字符串
 let s3 = `Hello ${s1}
