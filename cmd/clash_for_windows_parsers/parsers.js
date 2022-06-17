@@ -10,6 +10,7 @@ module.exports.parse = async (
   console.log(selected)
   console.log(obj)
   obj["rules"] = [
+    "DOMAIN-SUFFIX,datalake.cn,DIRECT",
     "DOMAIN-SUFFIX,superstor.cn,DIRECT",
     "RULE-SET,reject,REJECT",
     "DOMAIN-SUFFIX,ip-api.com,DIRECT",
