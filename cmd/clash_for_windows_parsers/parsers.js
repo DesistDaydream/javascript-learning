@@ -10,6 +10,7 @@ module.exports.parse = async (
   console.log(selected)
   console.log(obj)
   obj["rules"] = [
+    "IP-CIDR,122.9.154.106/32,DIRECT",
     "DOMAIN-SUFFIX,datalake.cn,DIRECT",
     "DOMAIN-SUFFIX,superstor.cn,DIRECT",
     "RULE-SET,reject,REJECT",
