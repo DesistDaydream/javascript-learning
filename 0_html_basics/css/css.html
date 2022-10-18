@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 有多种方式书写 CSS 代码 -->
+    <!-- 一、外部样式表。使用 link 标签 -->
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <!-- 二、内部样式表。使用 style 标签 -->
+    <style>
+        hr {
+            color: sienna;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+
+        body {
+            background-image: url("images/back40.gif");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 三、内联样式。作为元素的属性 -->
+    <p style="color:sienna;margin-left:20px">这是一个段落。</p>
+
+    <!-- 优先级：
+    （内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式 -->
+</body>
+
+</html>

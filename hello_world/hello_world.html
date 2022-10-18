@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- 设置编码，否则 JS 控制台如果输出中文时，将会出现乱码 -->
-    <meta charset="UTF-8" />
-    <title>Hello World</title>
-  </head>
 
-  <body>
-    <!-- 有多种方式可以在书写 JS 代码 -->
-    <!-- 行内式， JS 代码写在标签上-->
-    <!-- a 标签，书写在 href 属性上 -->
-    <a href="javascript: alert('Hello World，行内式，a 标签');">点我</a>
-    <!-- 非 a 标签，书写在行为属性上 -->
-    <div onclick="alert('Hello World，行内式，非 a 标签')">点我</div>
+<head>
+  <!-- 设置编码，否则 JS 控制台如果输出中文时，将会出现乱码 -->
+  <meta charset="UTF-8" />
+  <title>Hello World</title>
+</head>
 
-    <!-- 内嵌式，JS 代码写在 script 标签中 -->
-    <script>
-      // 在前端页面上显示的内容
-      alert("Hello World 内嵌式")
-      // 在后端控制台显示的内容
-      console.log("Hello World backend")
-    </script>
+<body>
+  <!-- 有多种方式可以在书写 JS 代码 -->
+  <!-- 一、行内式， JS 代码写在标签上-->
+  <!-- a 标签，书写在 href 属性上 -->
+  <a href="javascript: alert('Hello World，行内式，a 标签');">点我</a>
+  <!-- 非 a 标签，书写在行为属性上 -->
+  <div onclick="alert('Hello World，行内式，非 a 标签')">点我</div>
 
-    <!-- 外链试，JS 代码写在单独的 .js 文件中，并通过 script 标签的 src 属性引入 .js 文件 -->
-    <script src="./hello_world.js"></script>
+  <!-- 二、内嵌式，JS 代码写在 script 标签中 -->
+  <script>
+    // 在前端页面上显示的内容
+    alert("Hello World 内嵌式")
+    // 在后端控制台显示的内容
+    console.log("Hello World backend")
+  </script>
 
-    <!-- 总结：
+  <!-- 三、外链试，JS 代码写在单独的 .js 文件中，并通过 script 标签的 src 属性引入 .js 文件 -->
+  <script src="./hello_world.js"></script>
+
+  <!-- 总结：
             行内式 # 强烈不推荐。不利于代码维护，也会导致 HTML 文件过于臃肿。
             内嵌式 # 一般测试或者学习时，使用这种方式，不用建立很多 .js 文件。
             外链式 # 强烈推荐
          -->
-  </body>
+</body>
+
 </html>
