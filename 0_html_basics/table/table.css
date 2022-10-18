@@ -1,0 +1,13 @@
+thead {
+    color: rgb(0, 17, 255);
+}
+
+tbody {
+    font-size: 90%;
+    font-style: italic;
+}
+
+tfoot {
+    color: brown;
+    font-weight: bold;
+}
