@@ -68,8 +68,8 @@ module.exports.parse = async (
     "RULE-SET,greatfire,Ghelper",
     "RULE-SET,telegramcidr,Ghelper",
     "GEOIP,CN,DIRECT",
-    "PROCESS-NAME,chrome.exe,Ghelper",
-    "PROCESS-NAME,Clash for Windows.exe,Ghelper",
+    // "PROCESS-NAME,chrome.exe,Ghelper",
+    // "PROCESS-NAME,Clash for Windows.exe,Ghelper",
     "MATCH,DIRECT",
   ]
   obj["rule-providers"] = {
