@@ -5,9 +5,9 @@
 
 name = "DesistDaydream"
 age = 22
-jsonText = {
+jsonData = {
   name: name,
   age: age,
 }
 
-console.log(JSON.stringify(jsonText))
+console.log(JSON.stringify(jsonData))
