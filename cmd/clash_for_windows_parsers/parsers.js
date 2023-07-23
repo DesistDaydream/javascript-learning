@@ -8,7 +8,7 @@ module.exports.parse = async (
   console.log("检查URL：", url)
   console.log("检查更新间隔：", interval)
   console.log(selected)
-  obj["dns"]["enhanced-mode"] = "fake-ip"
+  // obj["dns"]["enhanced-mode"] = "fake-ip"
   obj["rules"] = [
     "IP-CIDR,172.38.0.0/16,DIRECT",
     "IP-CIDR,122.9.154.106/32,DIRECT",
