@@ -1,6 +1,7 @@
 // 注意：服务端需要允许跨域 Set("Access-Control-Allow-Origin", "*")
-// 创建 ajax 对象
+// 实例化 XMLHttpRequest 对象
 let xhr = new XMLHttpRequest()
+
 // 配置请求信息
 xhr.open("GET", "http://localhost:18080/", true)
 
@@ -13,3 +14,9 @@ xhr.onload = function () {
 
 // 使用配置好的信息发起 HTTP 请求
 xhr.send()
+
+// Fetch API 的示例
+fetch('https://api.github.com/users/DesistDaydream')
+  .then(response => response.json())
+  .then(json => console.log(json))
+  .catch(err => console.log('Request Failed', err));
