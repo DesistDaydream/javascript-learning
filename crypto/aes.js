@@ -21,7 +21,7 @@ function decrypt(text) {
 }
 
 var key = "1234567890123456" //秘钥key
-var text = "123456" //要加密的字符串
+var text = "DesistDaydream" //要加密的字符串
 var text_encode = encrypt(text) //加密后的字符串
 
 console.log("加密的字符串为：", decrypt(text_encode)) //打印出解密后的字符串
