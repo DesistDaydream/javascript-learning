@@ -1,10 +1,10 @@
 // 定义函数
-function ArrowFunction() {
+function FunctionDemo() {
   console.log("Function 练习")
 }
 
 // 调用函数
-ArrowFunction()
+FunctionDemo()
 
 // Function 参数
 // JS 里的形参不用指定类型么？~

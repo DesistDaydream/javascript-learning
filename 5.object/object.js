@@ -1,3 +1,4 @@
+// JS 中对象的基本用法。
 function BasicObject() {
   // 声明
   var objectType = {}
@@ -57,6 +58,37 @@ function Expand() {
   console.log(obj2)
 }
 
+// 具有方法的对象
+function ObjectWithMethod(params) {
+  var myObject = {
+    // 其他属性...
+    propertyOne: "Hello",
+
+    // 创建 myObject 对象的方法，方法名为 methodOne
+    // 这个其实就类似于一个名为 methodOne 的函数，就像 `function methodOne(t)`
+    methodOne: function (a) {
+      // 实际的方法体代码
+      console.log("调用了 myObject 对象的方法，参数为:" + a);
+    },
+
+    methodTwo(a) {
+      console.log("调用了 myObject 对象的方法，参数为:", a)
+    }
+
+    // 其他方法或属性...
+  };
+
+  // 调用 propertyOne 属性
+  console.log("基本属性:", myObject.propertyOne);
+  // 调用 methodOne 方法
+  myObject.methodOne("Hello, World!"); // 输出: Decoding string: Hello, World!
+  myObject.methodTwo(42); // 输出: Invalid input. Expected a string.
+}
+
+// JS 中的 object 类型就像其他语言的 class 似的。
+// 在 ES6 标准出来后，添加了 class 语法，以便让 JS 中面向对象的代码写法与传统面向对象的写法类似
+
 // BasicObject()
 // DeconstructObject()
-Expand()
+// Expand()
+ObjectWithMethod()
